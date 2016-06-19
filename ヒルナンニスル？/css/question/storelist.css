@@ -1,0 +1,110 @@
+@charset "UTF-8";
+ * {
+    margin: auto;
+    padding: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+header.header {
+    position: fixed;
+    top: 0;
+    left 0;
+    width: 100%;
+}
+
+header.header section.header {
+    border: 1px solid #000;
+    padding: 10px;
+    padding-bottom: 25px;
+    background-color: rgb(250, 191, 143);
+}
+
+header.header h1,
+header.header nav {
+}
+
+header.header h1 {
+    font-size: 1em;
+    padding-left: 5%;
+    float: left;
+}
+
+header.header nav {
+    padding-right: 5%;
+    float: right;
+}
+
+article.contents {
+    margin: 5px;
+}
+
+section.maps {
+    background-color: #FFFFFF
+}
+
+div#map_canvas {
+    height: 200px;
+}
+
+article.contents section h1 {
+    font-size: 1em;
+}
+
+article.contents section p {
+    text-align: center;
+    font-size: 2em;
+    list-style-position: inside;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+article.contents section section {
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td[rowspan="2"] {
+    width: 20%;
+    border: 1px solid #000;
+}
+
+td.store-name,
+td.store-desc {
+    width: 80%;
+    border: 1px solid #000;
+}
+
+img.store-img {
+    vertical-align:middle;
+    width: 100%;
+}
+
+footer {
+    position: fixed;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: rgb(250, 191, 143);
+    text-align: center;
+}
+
+a.support-btn {
+    display: block;
+    border: 2px solid #000;
+    padding: 5px 0px 5px 0px;
+}

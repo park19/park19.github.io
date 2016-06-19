@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/question/result.css">
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="../js/gps.js"></script>
+</head>
+<body onload="gps();">
+
+<header class="header">
+	<h1>ヒルナンニスル？</h1>
+	<!--<nav>
+		<a class="regist-btn" href="">新規登録</a>
+		<a class="login-btn" href="login/index.html">ログイン</a>
+	</nav>-->
+</header>
+
+<article class="contents">
+	<section>
+		<h1>あなたにオススメする料理はこちらです。</h1>
+		<p>かつ丼</p>
+	</section>
+	<form action="storelist.html" method="get" name="gpsform">
+		<input type="text" id="pos" name="pos" value="">
+		<input type="text" id="address" name="address" value="">
+		<input type="button" onclick="getLatLng();" value="現在地周辺を検索" />
+	</form>
+</article>
+
+<footer>
+	<!--<a class="support-btn" href="">お問合わせはこちら</a>-->
+</footer>
+
+</body>
+</html>
