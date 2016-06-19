@@ -16,12 +16,4 @@ function initialize() {
         map: map,
         title: address
     });
-    var pos = new google.maps.LatLng(35.70964,139.81074);
-    //  var image = 'img/ico_lopan.png';
-    var lopanMarker = new google.maps.Marker({
-        position: pos,
-        map: map,
-        //    icon: image,
-        title: 'Lopan cafe'
-    });
 }
