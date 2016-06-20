@@ -72,7 +72,7 @@ table {
     border-collapse: collapse;
     
     /* アニメーション時間 */
-    animation-duration: 1s;
+    animation-duration: 3s;
     /* アニメーション名 */
     animation-name: slidein;
 }
