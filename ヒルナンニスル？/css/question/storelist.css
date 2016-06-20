@@ -1,5 +1,4 @@
-@charset "UTF-8";
- * {
+@charset "UTF-8"; * {
     margin: auto;
     padding: auto;
 }
@@ -16,8 +15,7 @@ body {
 header.header {
     position: fixed;
     top: 0;
-    left 0;
-    width: 100%;
+    left 0; width: 100%;
 }
 
 header.header section.header {
@@ -27,8 +25,7 @@ header.header section.header {
     background-color: rgb(250, 191, 143);
 }
 
-header.header h1,
-header.header nav {
+header.header h1, header.header nav {
 }
 
 header.header h1 {
@@ -73,6 +70,11 @@ article.contents section section {
 
 table {
     border-collapse: collapse;
+    
+    /* アニメーション時間 */
+    animation-duration: 1s;
+    /* アニメーション名 */
+    animation-name: slidein;
 }
 
 td[rowspan="2"] {
@@ -80,21 +82,37 @@ td[rowspan="2"] {
     border: 1px solid #000;
 }
 
-td.store-name,
-td.store-desc {
+td.store-name, td.store-desc {
     width: 80%;
     border: 1px solid #000;
 }
 
 img.store-img {
-    vertical-align:middle;
+    vertical-align: middle;
     width: 100%;
 }
 
+/* ▼アニメーション名「slidein」の動作内容 */
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        color: blue;
+        background-color: #aaccff;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        color: black;
+        background-color: white;
+    }
+}
+
 footer {
-    position: fixed;  
-    bottom: 0;  
-    left: 0;  
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #000;
